@@ -66,6 +66,7 @@ body {
   border-color: hsl(0, 0%, 100%);
   background-color: rgba(1, 2, 3, 0);
   transition: all 0.4s ease 0s;
+  outline: none;
 }
 
 .LoginSignup:hover {
@@ -81,7 +82,7 @@ body {
   justify-items: center;
 }
 
-@media only screen and (max-width: 380px) {
+/* @media only screen and (max-width: 380px) {
   .Logo img {
     height: 90px;
     width: 60px;
@@ -125,10 +126,11 @@ body {
     background-color: rgba(1, 2, 3, 0);
     transition: all 0.4s ease 0s;
     border: 2px solid;
+    outline: none;
   }
-}
+} */
 
-@media only screen and (maxn-width: 1200px) {
+/* @media only screen and (maxn-width: 1200px) {
   .Logo span {
     position: absolute;
     text-transform: uppercase;
@@ -136,6 +138,9 @@ body {
     margin-top: 8px;
     color: #ffff38;
     font-weight: 400;
+  }
+  a{
+    outline: none;
   }
   .Logo img {
     height: 52px;
@@ -168,4 +173,4 @@ body {
     transition: all 0.4s ease 0s;
     border: 2px solid;
   }
-}
+} */

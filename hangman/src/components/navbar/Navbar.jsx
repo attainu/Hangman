@@ -1,15 +1,16 @@
 import React from 'react'
 import logo from "./images/hangman-logo.svg";
+import {NavLink} from "react-router-dom"
 function Navbar(){
     return(
         <div className="Navbar">
-      <a className="Logo"><img src={logo} alt="logo"/><span>hangman</span></a>
+      <NavLink  className="Logo" to="/"><img src={logo} alt="logo"/><span>hangman</span></NavLink>
       <div className="mobile">
       <nav>
         <ul className="NavOptions">
-          <li><a href="instruction.html">INSTRUCTIONS</a></li>
-          <li><a href="">LEADERBOARD</a></li>
-          <li><a href="quiz.html">CUSTOM QUIZ</a></li>
+          <li><NavLink exact activeClassName="active_class" to="/inst">INSTRUCTIONS</NavLink></li>
+          <li><NavLink exact activeClassName="active_class" to="">LEADERBOARD</NavLink></li>
+          <li><NavLink exact activeClassName="active_class" to="/quiz">CUSTOM QUIZ</NavLink></li>
         </ul>
       </nav>
       <a><button className="LoginSignup">LOGIN / SIGNUP</button></a>
