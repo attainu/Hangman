@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import "./Hangman.css";
 import step0 from "./images/0.png";
 import step1 from "./images/1.png";
@@ -42,7 +42,7 @@ class Hangman extends Component {
   generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map((letter) => (
       <button
-        class="btn btn-lg btn-primary m-2"
+        class="btn btn-lg btn-primary m-2 keyboardbtn"
         key={letter}
         value={letter}
         onClick={this.handleGuess}
@@ -80,19 +80,21 @@ class Hangman extends Component {
 
     return (
       <div className="Hangman container" id="interface">
-        <h1 className="text-center">Hangman</h1>
-        <div className="float-right">
-          Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
+        <div class="photoWrongGuess">
+          <div className="float-right wrongguess">
+            Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
+          </div>
+          <div className="text-center">
+            <img class="hangmanframe" src={this.props.images[this.state.mistake]} alt="" />
+          </div>
         </div>
         <div className="text-center">
-          <img src={this.props.images[this.state.mistake]} alt="" />
-        </div>
-        <div className="text-center">
-          <p>Guess Word</p>
-          <p>{!gameOver ? this.guessedWord() : this.state.answer}</p>
-          <p>{gameStat}</p>
+          <p class="guessword">Guess Word</p>
+          <p class="">{!gameOver ? this.guessedWord() : this.state.answer}</p>
+          <p>heloo</p>
+          <p class="keyboard .col-xl-8">{gameStat}</p>
           <NavLink exact to="/new">
-            <button className="btn btn-info">New Game</button>
+            <button className="btn btn-info newgame">New Game</button>
           </NavLink>
         </div>
       </div>

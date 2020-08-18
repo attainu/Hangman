@@ -23,6 +23,7 @@
     animation-name: strech;
     animation-duration:4s; 
     animation-iteration-count:infinite ;
+    -moz-animation-timing-function: linear;
 }
 #CategoryHeading:hover{
     font-size: 3.2rem;
