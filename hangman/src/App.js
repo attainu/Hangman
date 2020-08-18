@@ -10,15 +10,20 @@ import Inst from "./components/instruction/Inst"
 import "./components/instruction/Inst.css"
 import CustomQuiz from "./components/CustomQuiz/CustomQuiz"
 import "./components/CustomQuiz/CustomQuiz.css"
-
+import Fetch from "./Fetch"
+import Category from './components/Category/Category';
+import "./components/Category/Category.css"
+import "./components/Card/Card.css"
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <Fetch/>
       <Switch>
         <Route exact path='/' component={GameMode}/>
         <Route exact path='/inst' component={Inst}/>
         <Route exact path='/quiz' component={CustomQuiz}/>
+        <Route exact path='/category' component={Category}/>
       </Switch>
     </div>
   );
