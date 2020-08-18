@@ -13,7 +13,7 @@ function Navbar(){
           <li><NavLink exact activeClassName="active_class" to="/quiz">CUSTOM QUIZ</NavLink></li>
         </ul>
       </nav>
-      <a><button className="LoginSignup">LOGIN / SIGNUP</button></a>
+      <NavLink exact to="/login-signup"><button className="LoginSignup">LOGIN / SIGNUP</button></NavLink>
       </div>
     </div>
     );

@@ -15,6 +15,8 @@ import Category from './components/Category/Category'
 import "./components/Category/Category.css"
 import "./components/Card/Card.css"
 import Words from "./components/SoloMode/Words"
+import LoginSignup from "./components/login-signup/LoginSignup"
+import "./components/login-signup/LoginSignup.css"
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
         <Route exact path='/quiz' component={CustomQuiz}/>
         <Route exact path='/category' component={Category}/>
         <Route exact path='/word/:end' component={Words}/>
+        <Route exact path='/word/login-signup' component={LoginSignup}/>
       </Switch>
     </div>
   );
