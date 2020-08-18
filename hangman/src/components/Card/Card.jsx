@@ -13,7 +13,7 @@ function Card(props) {
             to={"/word/" + `${props.title}`}
             params={{ djnjcd: "hello" }}
           >
-            <a href="#" class="btn btn-primary">
+            <a href="#" class="btn btn-primary btncard">
               Play
             </a>
           </Link>

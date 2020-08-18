@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './LoginSignup.css';
+import LoginBox from "./LoginBox";
+import RegisterBox from "./RegisterBox";
 
 class LoginSignup extends Component {
 
@@ -16,7 +17,7 @@ class LoginSignup extends Component {
     return (
       <div className="root-container">
         <div className="box-container">
-          {this.state.isLoginOpen && <LoginBox />}
+          {this.state.isLoginOpen && <LoginBox/>}
           {this.state.isRegisterOpen && <RegisterBox />}
         </div>
       </div>

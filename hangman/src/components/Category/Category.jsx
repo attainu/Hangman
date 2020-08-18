@@ -17,7 +17,7 @@ function card(val){
 const Category=()=>{
     return(
         <>
-        <p id="CategoryHeading"> CATEGORY</p>
+        <p id="CategoryHeading" class="text-centre"> CATEGORY</p>
         <div class="CategoryCard">
            {CardData.map(card)}
         </div>
