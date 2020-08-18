@@ -14,8 +14,6 @@
 #CategoryHeading{
     font-size: 3rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 60px;
     font-weight: 800;
     color: rgb(222, 223, 220);

@@ -1,7 +1,7 @@
 const CardData=[
     {
         image:"https://i.pinimg.com/originals/af/21/0f/af210fbb1e24644723dbe71312595034.jpg",
-        title:"movies"
+        title:"movie"
     },
     {
         image:"https://img.etimg.com/thumb/msid-69712122,width-640,resizemode-4,imgsize-1226932/eat-your-fruits-and-veggies-to-avoid-strokes.jpg",

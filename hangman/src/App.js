@@ -11,9 +11,10 @@ import "./components/instruction/Inst.css"
 import CustomQuiz from "./components/CustomQuiz/CustomQuiz"
 import "./components/CustomQuiz/CustomQuiz.css"
 import Fetch from "./Fetch"
-import Category from './components/Category/Category';
+import Category from './components/Category/Category'
 import "./components/Category/Category.css"
 import "./components/Card/Card.css"
+import Words from "./components/SoloMode/Words"
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/inst' component={Inst}/>
         <Route exact path='/quiz' component={CustomQuiz}/>
         <Route exact path='/category' component={Category}/>
+        <Route exact path='/word/:end' component={Words}/>
       </Switch>
     </div>
   );
