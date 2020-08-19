@@ -17,6 +17,8 @@ import "./components/Card/Card.css"
 import Words from "./components/SoloMode/Words"
 import LoginSignup from "./components/loginsignup/LoginSignup"
 import Hangman from './components/SoloMode/Hangman';
+import Rank from "./components/leaderboard/Rank"
+import "./components/leaderboard/Rank.css"
 // import "./components/login-signup/LoginSignup.css"
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route exact path='/word/:end' component={Words}/>
         <Route exact path='/word/login-signup' component={LoginSignup}/>
         <Route exact path='/new' component={Category}/>
+        <Route exact path='/rank' component={Rank}/>
       </Switch>
     </div>
   );

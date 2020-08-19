@@ -5,7 +5,7 @@
   text-transform: uppercase;
   animation-name: borderanimation;
   animation-duration: 2s;
-  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 .card-title{
