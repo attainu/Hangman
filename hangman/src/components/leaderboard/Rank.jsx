@@ -7,7 +7,7 @@ class Rank extends Component {
 
   componentDidMount() {
     fetch(
-      "http://my-json-server.typicode.com/divyanshurawat90/leaderboard/players"
+      "https://my-json-server.typicode.com/divyanshurawat90/leaderboard/players"
     )
       .then((response) => response.json())
       .then((booksList) => {
