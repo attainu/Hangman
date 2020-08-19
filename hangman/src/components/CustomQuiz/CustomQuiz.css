@@ -68,6 +68,7 @@
     background: linear-gradient(to right, #2c3e50e0, #4ca1af);
   }
   .words-heading {
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +98,7 @@
     color: white;
     font-size: 1.2rem;
     border-radius: 20px;
+    margin-bottom: 5px;
     padding: 6px;
     background: rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -108,3 +110,39 @@
     border: solid 5px rgba(186, 252, 93, 0.83);
   }
   
+  .list{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    list-style: none;
+    color: white;
+  }
+  .wordtittle{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color:white;
+  }
+.sub{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.sub p{
+  border: 5px solid white;
+  color: white;
+  margin-top: -10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  outline: none;
+}
+  hr{
+    
+    border:1.2px solid rgb(96, 91, 91);
+    border-radius: 5px;
+  }

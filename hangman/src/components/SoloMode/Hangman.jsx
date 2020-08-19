@@ -46,8 +46,7 @@ class Hangman extends Component {
         key={letter}
         value={letter}
         onClick={this.handleGuess}
-        disabled={this.state.guessed.has(letter)}
-      >
+        disabled={this.state.guessed.has(letter)}>
         {letter}
       </button>
     ));
@@ -69,12 +68,19 @@ class Hangman extends Component {
     console.log(this.guessedWord().join(""));
     console.log(this.state.answer);
     let gameStat = this.generateButtons();
-
+    let temp={};
     if (isWinner) {
       gameStat = "You Won!!!";
+      // temp=JSON.parse(`{ "${this.props.rword.toLowerCase()}" }`);
+      // piclink=temp;
+      // console.log(temp);
     }
 
     if (gameOver) {
+      
+      // temp=JSON.parse(`{ ${this.props.rword.toLowerCase()} }`);
+      // piclink=temp;
+      // console.log(temp);
       gameStat = "You Lost!!!";
     }
 
@@ -91,7 +97,6 @@ class Hangman extends Component {
         <div className="text-center">
           <p class="guessword">Guess Word</p>
           <p class="">{!gameOver ? this.guessedWord() : this.state.answer}</p>
-          <p>heloo</p>
           <p class="keyboard .col-xl-8">{gameStat}</p>
           <NavLink exact to="/new">
             <button className="btn btn-info newgame">New Game</button>
