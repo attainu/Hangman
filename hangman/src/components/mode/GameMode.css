@@ -1,0 +1,45 @@
+.main-page-card {
+    display: flex;
+    direction: column;
+    justify-content: space-around;
+  }
+  
+  .main-card {
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.197),
+      rgba(255, 255, 255, 0.088)
+    );
+    margin: 70px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 15px solid #fff;
+    cursor: pointer;
+  }
+  
+  #solo {
+    margin-top: 40%;
+    letter-spacing: 5px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-card:hover {
+    box-shadow: 0 15px 90px 0 #fff inset, 0 15px 90px 0 #fff,
+      0 15px 90px 0 #fff inset, 0 15px 90px 0 #fff;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+  }
+
+  a:hover{
+    color: white;
+    text-decoration: none;
+  }

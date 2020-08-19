@@ -1,0 +1,33 @@
+.instruction {
+    display: flex;
+    cursor: default ;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    border: 9px #969ca7 solid;
+    padding: 30px;
+    box-shadow: 2.5px 2.5px 8px rgb(64, 62, 62) inset ,6px 6px 1px rgba(0, 0, 0, 0.088);
+  }
+  
+  .how-to-play{
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 0px;
+      text-shadow: -1.2px 0.5px 5px rgba(0, 0, 0, 0.687);
+  }
+  
+  .points{
+      font-family: 'Sriracha', cursive;
+      font-size: 1.05rem;
+      margin: 8px;
+      color: rgb(73, 62, 62);
+  }
+  

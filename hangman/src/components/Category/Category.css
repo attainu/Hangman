@@ -1,0 +1,46 @@
+.CategoryCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px ;
+    margin-top:40px;
+}
+
+.CategoryPhoto{
+    height: 200px;
+    width:100%;
+}
+
+#CategoryHeading{
+    height: 60px;
+    font-size: 3rem;
+    margin-top: 60px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px -1px 6px;
+    cursor: default;
+    letter-spacing: 10px;
+    animation-name: strech;
+    animation-duration:4s; 
+    animation-iteration-count:infinite ;
+    -moz-animation-timing-function: linear;
+}
+#CategoryHeading:hover{
+    font-size: 3.2rem;
+    color:rgb(16, 128, 83);
+    text-shadow: 3px -2.5px 12px white;
+    
+}
+
+@keyframes strech{
+    0%{
+        letter-spacing:10px ;
+    }
+    50%{
+        letter-spacing: 60px;
+    }
+    100%{
+        letter-spacing: 10px;
+    }
+}
+

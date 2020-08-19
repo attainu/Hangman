@@ -1,0 +1,39 @@
+.card {
+  border: 6px solid;
+  border-radius: 8px;
+  box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.537);
+  text-transform: uppercase;
+  animation-name: borderanimation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.card-title{
+    letter-spacing: 8px;
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: rgb(98, 97, 97);
+}
+
+.btn{
+    border-radius: 5px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+.btncard:hover{
+    background:#4CAF50;
+}
+
+@keyframes borderanimation {
+  0% {
+    border: 6px solid #ff33ff;
+  }
+  50% {
+    border: 6px solid #33ffff;
+  }
+  100% {
+    border: 6px solid #ff33ff;
+  }
+}

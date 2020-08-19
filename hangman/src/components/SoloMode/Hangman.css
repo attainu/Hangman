@@ -1,0 +1,76 @@
+#interface{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    width: 100vw;
+    height: 95vh;
+    border:10px solid #C19A6B;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px,
+                4px 4px 10px inset;
+    margin-bottom:40px;
+}
+
+.photoWrongGuess{
+    display: flex;
+    align-items: flex-start;
+
+}
+.hangmanframe{
+    width: 300px;
+    height: 380px;
+    padding: 30px;
+    margin-right: 30px;
+}
+
+.wrongguess{
+ width: 320px;
+ padding:20px;
+ letter-spacing: 2px;
+ color: blue;
+}
+
+.keyboard{
+    background: black;
+    border-radius: 13px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.524);
+    color: white;
+}
+
+.keyboardbtn{
+    background-color: #303030;
+    border-bottom:3px solid #505050;
+    
+}
+
+.guessword{
+    letter-spacing: 10px;
+    font-weight: 600;
+    color: rgb(84, 137, 32);
+}
+
+.newgame{
+    box-shadow: 1px 1px 8px black;
+    margin-top: 10px;
+}
+.newgame:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px black;
+    
+}
+
+.resultimg{
+
+    display: flex;
+    margin: 20px;
+    justify-content: ;
+    height: 100%;
+    width: 40%;
+}
+
+.resultimg img{
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+}
