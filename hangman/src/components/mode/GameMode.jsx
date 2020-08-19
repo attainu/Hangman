@@ -5,15 +5,14 @@ const GameMode = () => {
     <div class="main-page-card">
       <div class="main-card" id="card1">
         <Link exact to="/category">
-          <p id="solo">SOLO MODE</p>
+          <p id="solo">PLAY</p>
         </Link>
       </div>
-
-      <div class="main-card" id="card2">
+      {/* <div class="main-card" id="card2">
         <Link exact to="/category">
           <p id="solo">DUO MODE</p>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

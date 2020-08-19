@@ -28,9 +28,9 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <NavLink exact to="/login-signup">
+        {/* <NavLink exact to="/login-signup">
           <button className="LoginSignup">LOGIN / SIGNUP</button>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
